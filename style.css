@@ -35,14 +35,55 @@
   pointer-events: none;
 }
 
-.time-select {
-  background: lightblue;
+.time-display {
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  font-size: 50px;
 }
 
-.sound-picker {
-  background: lightgreen;
+video {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -1;
 }
 
-.player-container {
-  background: lightcoral;
+.time-select button,
+.sound-select button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all 1s ease;
+}
+
+.time-select button:hover {
+  color: black;
+  background-color: white;
+}
+
+.sound-picker button {
+  border: none;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.sound-picker button:nth-child(1) {
+  background-color:#4972a1;
+}
+
+.sound-picker button:nth-child(2) {
+  background-color: #a14f49;
+}
+
+.sound-picker button img {
+  height: 100%;
 }
